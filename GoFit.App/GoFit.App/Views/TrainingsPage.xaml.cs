@@ -38,9 +38,9 @@ namespace GoFit.App.Views
         protected override void OnAppearing()
         {
             base.OnAppearing();
-
+            /*
             if (viewModel.Trainings.Count == 0)
-                viewModel.LoadTrainingsCommand.Execute(null);
+                viewModel.LoadTrainingsCommand.Execute(null);*/
         }
     }
 }

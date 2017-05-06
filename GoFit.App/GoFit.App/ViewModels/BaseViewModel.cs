@@ -11,7 +11,7 @@ namespace GoFit.App.ViewModels
         /// <summary>
         /// Get the azure service instance
         /// </summary>
-        public IDataStore<Training> TrainingStore => DependencyService.Get<IDataStore<Training>>();
+        public ITrainingStore TrainingStore => DependencyService.Get<ITrainingStore>();
         
         public bool IsBusy
         {

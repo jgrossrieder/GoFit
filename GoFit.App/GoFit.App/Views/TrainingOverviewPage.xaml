@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GoFit.App.Views.TrainingOverviewPage"
+             Title="{Binding TrainingTask.Result.Name}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.Row="1" Orientation="Horizontal"  HorizontalOptions="Center">
+            <Label Text="{Binding TrainingTask.Result.WorkStations.Count}"></Label>
+            <Label> workstations</Label>
+        </StackLayout>
+        <StackLayout Grid.Row="2" Orientation="Horizontal"  HorizontalOptions="Center">
+            <Label>Last session: </Label>
+            <Label Text="{Binding TrainingTask.Result.LastUsage,StringFormat='{0:D}'}"></Label>
+        </StackLayout>
+        <Button   HorizontalOptions="Center" Grid.Row="3" Command="{Binding StartSessionCommand}" Text="Start session!"></Button>
+    </Grid>
+</ContentPage>

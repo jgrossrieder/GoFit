@@ -13,7 +13,7 @@ using Xamarin.Forms;
 namespace GoFit.App.ViewModels
 {
     public class TrainingsViewModel : BaseViewModel
-    {
+    {/*
         public ObservableRangeCollection<Training> Trainings { get; set; }
         public Command LoadTrainingsCommand { get; set; }
 
@@ -58,6 +58,6 @@ namespace GoFit.App.ViewModels
             {
                 IsBusy = false;
             }
-        }
+        }*/
     }
 }
